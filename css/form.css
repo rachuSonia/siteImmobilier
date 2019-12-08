@@ -1,0 +1,186 @@
+
+/* formulaire de Location page index.php */
+
+.formClassified{
+    text-align: center;
+    margin: auto;
+}
+
+/* Formulaire de recherhce d'annonce de Location et de Vente de bien page index.php */
+
+.form{
+    color:#fff;
+}
+
+.form input,select{
+    width: 80%;
+    border-right: 0;
+    border-top: 0;
+    border-left:0;
+    background-color:#3d3c3a;
+    opacity:0.5;
+}
+
+.form input,option,select{
+    color:#fff;
+    font-size:1.7rem;
+    padding:10px;
+}
+.form label{
+    float: left;
+    font-size:1.8rem;
+    color: #f49e39;
+}
+.formLocation{
+    margin-top:5%;
+}
+
+
+/* MAIN */
+/* PAGE CONNEXION /INSCRIPTION et formualire de commentaire*/
+.userConnect{
+    width: 60%;
+    margin:auto;  
+    background-color:#3d3c3a;
+    color:white;
+    
+    padding:20px;
+    -webkit-box-shadow: 0 15px 25px #3d3c3a;
+    -moz-box-shadow: 0 15px 25px #3d3c3a;
+    -o-box-shadow: 0 15px 25px #3d3c3a;
+    -khtml-box-shadow: 0 15px 25px #3d3c3a;
+    -ms-box-shadow: 0 15px 25px #3d3c3a;
+    box-shadow:0 15px 25px #3d3c3a;
+
+    -ms-border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -o-border-radius: 10%;
+    -khtml-border-radius: 10%;
+    border-radius:10%;
+    border:0px;
+    margin-top:5%;
+    margin-bottom: 5%;
+}
+
+.userConnect div{
+	margin-bottom: 12%;
+} 
+
+.userConnect #rememberMe{
+    width: 5%;
+} 
+
+.userConnect #checkbox{
+    float:left;
+    margin-left:2%;
+} 
+
+
+
+.userConnect label{
+    font-size:1.3rem;
+    text-align:left;
+} 
+
+.userConnect input,
+.userConnect textarea{
+
+	width: 100%;
+	padding:10px;
+    border-right: 0;
+    border-top: 0;
+    border-left:0;
+    background-color:#3d3c3a;
+	border-bottom:3px solid #DEB887;
+	 color:#fff; 
+}
+.inscriptConnec{
+    font-size:2.5rem;
+}
+
+/* Message d'erreur et de succes en validant un formulaire */
+.erreur,
+.succes{
+	color:#fff;
+	background-color:#FF0000;
+	padding:10px;
+    margin-top:3%;
+    
+    -ms-border-radius: 50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius: 50px;
+    -o-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    border-radius:50px;
+    opacity:0.6;
+    font-size:1.5rem;
+}
+
+/* MAIN rédaction d'un nouvel article page writeArticle.php */
+.article{
+    width: 60%;
+    margin:auto;
+    background-color:#000;
+    opacity:0.8;
+    color:#fff;
+
+    -webkit-box-shadow: 3px 3px 8px #000;
+    -moz-box-shadow:3px 3px 8px #000;
+    -o-box-shadow: 3px 3px 8px #000;
+    -khtml-box-shadow: 3px 3px 8px #000;
+    -ms-box-shadow: 3px 3px 8px #000;
+    box-shadow: 3px 3px 8px #000;
+}
+.article h2{
+    font-size:4rem;
+    margin: 7%;
+    padding-top:40px; 
+}
+
+.article div{
+    margin-bottom: 2%;
+}
+.article input,.article textarea{
+    width: 80%;
+    border-top:0;
+    border-left:0;
+    border-right: 0;
+    background-color:#000;
+    color:#fff;
+    font-size:1.5rem;
+}
+
+.article label{
+    float:left;
+    font-size:2rem;
+    margin-left:2%;
+}
+
+/* Formulaire d'estimation de bien  */
+.formEstimatoin{
+    width: 70%;
+    background-color:#3d3c3a;
+    margin:auto;
+    padding:20px;
+    margin-top:4%;
+    margin-bottom:4%;
+}
+
+.formEstimatoin div{
+    margin-bottom: 3%;
+  
+}
+.formEstimatoin input,
+.formEstimatoin textarea
+{
+    width: 40%;
+    padding:10px 10px 10px 30px;
+    border:none;
+    background-color:#3d3c3a;
+    border-bottom: 1px solid #f49e39;
+    color:#fff;
+}
+.formEstimatoin textarea{
+    width: 80%;
+}

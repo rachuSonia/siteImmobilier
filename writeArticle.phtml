@@ -1,0 +1,33 @@
+
+    <main class='mainArticle'>
+
+       
+        <form method="POST" class='article'>
+			
+                 <h2>rédiger un article</h2>
+				<div>
+					<label for="title">Titre :</label><br>
+					<input type="text" name="title" id='title'>
+				</div>
+
+				<div>
+					<label for='article'>Article :</label><br>
+					<textarea id="article" name="article" rows="15" cols="70"></textarea>
+					
+				</div>
+
+				<div>
+					<label for="auteur">Auteur :</label><br>
+					<input type="text" name="auteur" value='<?= $userInfo['pseudo']; ?>'>
+				</div>
+                
+				<div>
+					<button type='submit' value='Publier'>Publier</button>
+					<button type='reset' value='Annuler'><a href='blog.php?id=<?= intval($userInfo['id_user']); ?>'>Annuler</a></button>
+				</div>
+		
+		</form>
+    </main>
+   
+
+    

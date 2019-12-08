@@ -1,0 +1,14 @@
+
+             
+            <?php  foreach($posts as $post): ?>
+
+                <div class='articleBlog'>
+                    <h3><?= htmlspecialchars($post['title']); ?></h3>
+                    <p><?= substr(htmlspecialchars($post['content']),0,180); ?> ...</p>
+                    <p class='auteur'><?= htmlspecialchars($post['pseudo']); ?> / <?= htmlspecialchars($post['date_publication']); ?></p>
+                    <a href='detailsArticle.php?id=<?= intval($post['id_post']); ?>' class='detail'><i class="fas fa-search-plus"></i>Lire la suite</a>
+                </div>
+            <?php endforeach; ?>
+ 
+
+    

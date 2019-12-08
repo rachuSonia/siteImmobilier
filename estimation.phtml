@@ -1,0 +1,50 @@
+
+
+      
+     <form method='POST' action='estimation.php' class='formEstimatoin userConnect'>
+        <h1>Demandez un rendez-vous d'estimation gratuite !!!</h1>
+        <h3>Mon bien</h3>
+        <div>
+            <select name="typeBien">
+                <option value="type de bien*">type de bien *</option>
+                <option value="Maison">Maison</option>
+                <option value="Appartement">Appartement</option>
+                <option value="Terrain">Terrain</option>
+                <option value="Parking">Parking</option>
+                <option value="Entreprise et Commerce">Entreprise et Commerce</option>
+            </select>
+        </div>
+
+        <div>
+            <input type='text' name='city' placeholder='ville ou code postale*'>
+            <input type='text' name='address' placeholder='Votre adresse*'>
+        </div>
+
+        <div>
+            <textarea name='comment' rows="5" cols="33" placeholder='Quelques mots sur votre projet *'></textarea>
+        </div>
+        
+        <h3>Mes coordonnées</h3>
+        <div>
+            <select name="civilité">
+                <option value="Civilité*">Civilité*</option>
+                <option value="Mr">Mr</option>
+                <option value="Mme">Mme</option>
+                <option value="Mlle">Mlle</option>
+                
+            </select>
+        </div>
+        <div>
+            <input type='text' name='firstName' placeholder='Prénom *'>
+            <input type='text' name='lastName' placeholder='Nom *'>
+        </div>
+        <div>
+            <input type='mail' name='email' placeholder='email *'>
+            <input type='tel' name='phone' placeholder='teléphone *'>
+        </div>
+        <button type="submit">Je valide ma demande</button>
+        <button type="reset"><a href='index.php'>Annuler</a></button>
+    </form>
+   
+
+    

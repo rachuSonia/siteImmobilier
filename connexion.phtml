@@ -1,0 +1,28 @@
+
+        
+        <form method="POST" action="connexion.php" class='userConnect'>
+        <h1>Connectez vous</h1>
+            <div>
+                <input type="mail" name="email" id="email" placeholder="Nom d'utilisateur">
+            </div>
+        
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Mot de passe">
+                </div>
+                <div id='checkbox'>
+                    <input type="checkbox" name="rememberMe" id="rememberMe">
+                    <label for="rememberMe">Se souvenier de moi</label>
+                </div>
+                <div class='clear'></div>
+                <div>
+                    <?php if(!empty($errors)) :?>
+                        <p class='erreur'><?= $errors; ?></p>
+                    <?php endif; ?>
+                </div>
+                    <button type="submit">Je me connecte</button>
+        </form>
+        <p class='inscriptConnec'>Vous n'avez pas de compte ? <span>Inscrivez-vous</span></p> 
+       
+   
+
+    

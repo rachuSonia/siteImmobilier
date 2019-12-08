@@ -1,0 +1,55 @@
+
+    <h2 class='editionProfil'>Editer mon profil </h2>
+        <form method="POST" action="editerProfilUser.php" enctype="multipart/form-data" class='userConnect'>
+            <h3>Mes informations personnelles</h3>
+            <div>
+                 <label for='newPicturs' class='custom_file_upload'>Photo de profil</label>
+                <input type="file" name="newPicturs" id="newPicturs">
+                <div>
+                    <?php if(!empty($errors['newPicturs'])) : ?>
+                        <p class='erreur'><?= $errors['newPicturs']; ?></p>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="text" name="newLastName" id="newLastName" value='<?= $userInfo['lastName']; ?>'>  
+                </div>
+                <div>
+                    <input type="text" name="newFirstName" id="newFirstName" value='<?= $userInfo['firstName']; ?>'>  
+                </div>
+                <div>
+                    <input type="date" name="newBirth_date" id='newBirth_date' value='<?= $userInfo['birth_date']; ?>'> 
+                </div>
+            </div>
+            <h3>Mes informations sur le compte</h3>
+                <div>
+                    <div>
+                        <input type="text" name="newPseudo" id="newPseudo" value='<?= $userInfo['pseudo']; ?>'>       
+                    </div>
+                    <div>
+                        <input type="password" name="newMdp1" id="newMdp1" value='<?= $userInfo['password']; ?>'>  
+                    </div>
+                 
+                </div>
+                <h3>Mes contacts</h3>
+                    <div>
+                        <div>
+                            <input type="text" name="newEmail1" id='newEmail1' value='<?= $userInfo['e_mail']; ?>'>
+                        </div>
+                        
+                        <div>
+                            <input type="text" name="newAdress" id="newAdress" value='<?= $userInfo['adress']; ?>'> 
+                        </div>
+                    </div>
+                    <div>
+                            <input type="tel" name='newPhoneMobile' id="newPhoneMobile" value='<?= $userInfo['phoneMobile']; ?>'>  
+                    </div>
+                    <div>
+                        <button type="submit">Mettre à jour</button>
+                        <button type="reset"><a href="user.php?id="<?= $userInfo['id_user']; ?>>Annuler</a></button>
+                    </div>
+</form>
+   
+
+    

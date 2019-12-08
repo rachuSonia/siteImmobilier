@@ -1,0 +1,28 @@
+
+
+    <main class='mainArticle'>
+
+        <form method="POST" class='article'>
+                 <h2>Editer mon arrticle</h2>
+				<div>
+					<label for="newTile">Titre :</label>
+					<input type="text" name="newTitle" id='newTile' value="<?= $article['title']; ?>">
+				</div>
+				<div>
+					<label for='newArticle'>Article :</label>
+					<textarea id="newArticle" name="newArticle" rows="15" cols="70"><?= $article['content']; ?></textarea>
+					
+				</div>
+				<div>
+					<label for="auteur">Auteur :</label>
+					<input type="text" name="auteur" value='<?= $userInfo['pseudo']; ?>'>
+				</div>
+				<div>
+					<button type='submit' value='Publier'>Mettre à jour</button>
+					<button type='reset' value='Annuler'><a href='blog.php?id=<?= $userInfo['id_user']; ?>'>Annuler</a></button>
+				</div>
+		
+		</form>
+
+
+    

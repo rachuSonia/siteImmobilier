@@ -1,0 +1,122 @@
+   
+<form method='POST' enctype="multipart/form-data" class='userConnect'>
+
+        <div>
+            <select id='type' name="type">
+            <option value="Appartement">Type de bien immobilier</option>
+                <option value="Appartement">Appartement</option>
+                <option value="Maison">Maison</option>
+                <option value="Commerce">Commerce</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="text" id="typeBien" name="typeBien" placeholder="Type d'appartement">
+        </div>
+
+        <div>
+             <textarea id="description" name="description" placeholder="Desciption" rows="5" cols="33"></textarea>
+        </div>
+
+        <div>
+            <input type="text" id="departement" name="departement" placeholder="Departement">
+        </div>
+
+        <div>
+            <input type="text" id="city" name="city" placeholder="Ville">
+        </div>
+
+        <div>
+            <input type="text" id="price" name="price" placeholder="Prix">
+        </div>
+
+        <div>
+            <input type="text" id="TypeConstruction" name="TypeConstruction" placeholder="Type de construction">
+        </div>
+
+        <div>
+            <input type="text" id="AnneeConstruction" name="AnneeConstruction" placeholder="Année de construction">
+        </div>
+
+        <div>
+            <input type="text" id="areaTotal" name="areaTotal" placeholder="Surface totale">
+        </div>
+
+        <div>
+            <input type="text" id="surfaceHabitable" name="surfaceHabitable" placeholder="Surface habitable">
+        </div>
+
+        <div>
+            <input type="text" id="surfaceTerrain" name="surfaceTerrain" placeholder="Surface Terrain">
+        </div>
+
+        <div>
+            <input type="text" id="nombrePiece" name="nombrePiece" placeholder="Nombre de piéces">
+        </div>
+
+        <div>
+            <input type="text" id="TaxesFonciere" name="TaxesFonciere" placeholder="Taxes fonciére">
+        </div>
+
+        <div>
+            <input type="text" id="TravauxRecent" name="TravauxRecent" placeholder="Travaux recent">
+        </div>
+        
+        <div>
+            <input type="text" id="TravauxProvisoir" name="TravauxProvisoir" placeholder="Travaux provisoir">
+        </div>
+
+        <div>
+            <input type="text" id="Equipement" name="Equipement" placeholder="Equipement">
+        </div>
+  
+        <div>
+            <input type="text" id="chauffage" name="chauffage" placeholder="Chauffage">
+        </div>
+
+        <div>
+            <input type="text" id="EauChaude" name="EauChaude" placeholder="Eau chaude">
+        </div>
+
+        <div>
+            <input type="text" id="plus" name="plus" placeholder="Plus">
+        </div>
+
+        <div>
+                <label for='Picturs1' class='custom_file_upload'>Photo (1)</label>
+                <input type="file" name="Picturs1" id="Picturs1">
+         </div>
+
+         <div>
+                 <label for='Picturs2' class='custom_file_upload'>Photo (2)</label>
+                <input type="file" name="Picturs2" id="Picturs2">
+         </div>
+
+         <div>
+                <label for='Picturs3' class='custom_file_upload'>Photo (3)</label>
+                <input type="file" name="Picturs3" id="Picturs3">
+         </div>
+
+         <div>
+                 <label for='Picturs4' class='custom_file_upload'>Photo (4)</label>
+                <input type="file" name="Picturs4" id="Picturs4">
+         </div>
+
+         <div>
+                <label for='Picturs5' class='custom_file_upload'>Photo (5)</label>
+                <input type="file" name="Picturs5" id="Picturs5">
+         </div>
+
+         <div>
+                 <label for='Picturs6' class='custom_file_upload'>Photo (6)</label>
+                <input type="file" name="Picturs6" id="Picturs6">
+         </div>
+
+          <div>
+            <button type="submit">Publier</button>
+            <button type="reset"><a href="user.php?id="<?= $_SESSION['id_user']; ?>>Annuler</a></button>
+        </div>
+        
+    </form>
+   
+

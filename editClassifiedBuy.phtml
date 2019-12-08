@@ -1,0 +1,98 @@
+
+       
+<form method='POST' enctype="multipart/form-data" class='userConnect'>
+        <div>
+            <select id='type' name="newType">
+            <option value="Appartement">Type de bien immobilier</option>
+                <option value="Appartement">Appartement</option>
+                <option value="Maison">Maison</option>
+                <option value="Commerce">Commerce</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" id="typeBien" name="newTypeBien" placeholder="Type d'appartement" value="<?= $classifiedBuy['typeBien'];?>">
+        </div>
+        <div>
+             <textarea id="description" name="newDescription" placeholder="Desciption" rows="5" cols="33"><?= $classifiedBuy['description'];?></textarea>
+        </div>
+        <div>
+            <input type="text" id="departement" name="newDepartement" placeholder="Departement" value="<?= $classifiedBuy['departement'];?>">
+        </div>
+        <div>
+            <input type="text" id="city" name="newCity" placeholder="Ville" value="<?= $classifiedBuy['ville'];?>">
+        </div>
+        <div>
+            <input type="text" id="price" name="newPrice" placeholder="prix" value="<?= $classifiedBuy['prix'];?>">
+        </div>
+        <div>
+            <input type="text" id="TypeConstruction" name="newTypeConstruction" placeholder="Type de construction" value="<?= $classifiedBuy['typeConstruction'];?>">
+        </div>
+        <div>
+            <input type="text" id="AnneeConstruction" name="newAnneeConstruction" placeholder="Année de construction" value="<?= $classifiedBuy['anneeConstruction'];?>">
+        </div>
+        <div>
+            <input type="text" id="areaTotal" name="newAreaTotal" placeholder="Surface totale" value="<?= $classifiedBuy['surfaceTotal'];?>">
+        </div>
+        <div>
+            <input type="text" id="surfaceHabitable" name="newSurfaceHabitable" placeholder="Surface habitable" value="<?= $classifiedBuy['surfaceHabitable'];?>">
+        </div>
+        <div>
+            <input type="text" id="surfaceTerrain" name="newSurfaceTerrain" placeholder="Surface Terrain" value="<?= $classifiedBuy['surfaceTerrain'];?>">
+        </div>
+        <div>
+            <input type="text" id="nombrePiece" name="newNombrePiece" placeholder="Nombre de piéces" value="<?= $classifiedBuy['nombrePiece'];?>">
+        </div>
+        <div>
+            <input type="text" id="TaxesFonciere" name="newTaxesFonciere" placeholder="Taxes fonciére" value="<?= $classifiedBuy['taxeFonciere'];?>">
+        </div>
+        <div>
+            <input type="text" id="TravauxRecent" name="newTravauxRecent" placeholder="Travaux recent" value="<?= $classifiedBuy['travauxRecent'];?>">
+        </div>
+        <div>
+            <input type="text" id="TravauxProvisoir" name="newTravauxProvisoir" placeholder="Travaux à prévoir" value="<?= $classifiedBuy['travauxPrevoir'];?>">
+        </div>
+        <div>
+            <input type="text" id="Equipement" name="newEquipement" placeholder="Equipement" value="<?= $classifiedBuy['equipement'];?>">
+        </div>
+  
+        <div>
+            <input type="text" id="chauffage" name="newChauffage" placeholder="Chauffage" value="<?= $classifiedBuy['chauffage'];?>">
+        </div>
+        <div>
+            <input type="text" id="EauChaude" name="newEauChaude" placeholder="Eau chaude" value="<?= $classifiedBuy['eauChaude'];?>">
+        </div>
+        <div>
+            <input type="text" id="plus" name="newPlus" placeholder="Plus" value="<?= $classifiedBuy['plus'];?>">
+        </div>
+        <div>
+                 <label for='Picturs1' class='custom_file_upload'>Photo principale</label>
+                <input type="file" name="newPicturs1" id="Picturs1">
+         </div>
+         <div>
+                <label for='Picturs2' class='custom_file_upload'>Autre photo</label>
+                <input type="file" name="newPicturs2" id="Picturs2">
+         </div>
+         <div>
+                 <label for='Picturs3' class='custom_file_upload'>Autre photo</label>
+                <input type="file" name="newPicturs3" id="Picturs3">
+         </div>
+         <div>
+                 <label for='Picturs4' class='custom_file_upload'>Autre photo</label>
+                <input type="file" name="newPicturs4" id="Picturs4">
+         </div>
+         <div>
+                <label for='Picturs5' class='custom_file_upload'>Autre photo</label>
+                <input type="file" name="newPicturs5" id="Picturs5">
+         </div>
+         <div>
+                 <label for='Picturs6' class='custom_file_upload'>Autre photo</label>
+                <input type="file" name="newPicturs6" id="Picturs6">
+         </div>
+          <div>
+            <button type="submit">Mettre à jour</button>
+            <button type="reset"><a href='classified.php?id=<?= $userInfo['id_user'] ?>'><a href='classified.php?id=<?= $userInfo['id_user'] ?>'>Annuler</a></button>
+           
+        </div>
+    </form>
+  
+

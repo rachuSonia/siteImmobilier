@@ -1,0 +1,45 @@
+
+	<div class="detilsClassified">
+				
+				<?php foreach ($buy as $classified):?>
+				<section class="annonce">
+						<section class='infoAnnonce'>
+							<img src="image/Acheter/<?= $classified['photo1'];?>" alt="photo principale d'une annonce">
+						</section><!--
+						--><section class='infoAnnonce'>
+						
+								<p><?= $classified['ville'];?>  <?= $classified['departement'];?></p>
+							
+								<p><?= $classified['type'];?>, <?= $classified['typeBien'];?></p>
+							
+								<p><?= $classified['surfaceTotal'];?> m², <?= $classified['nombrePiece'];?> piéces</p>
+								<p><strong><?= $classified['prix'];?> €</strong></p>
+						
+							<p><a href="detailsClassifiedBuy.php?id=<?= $classified['id'];?>">voir detail</a></p>
+						</section>
+						</section>
+			<?php endforeach; ?>
+			
+      <!-- PAGINATION -->
+		<div class="pagination">
+			<?php if($currentPage==1) : ?>
+				<p><i class="fas fa-angle-double-left"></i></p>
+			<?php else : ?>
+			<a href="?page=<?= $prevPage; ?>&type=<?= $type; ?>&price=<?= $price; ?>&surface=<?= $area; ?>&areaTerrain=<?= $areaTerrain; ?>&ville=<?= $city; ?>"><i class="fas fa-angle-double-left"></i></a>
+			<?php endif; ?>
+
+			<?php for($i=$currentPage-1;$i<=$currentPage+1;$i++) : ?>
+				<?php if($i>0 && $i<=$lastRows) : ?>
+					<a href='?page=<?= $i; ?>&type=<?= $type; ?>&price=<?= $price; ?>&surface=<?= $area; ?>&areaTerrain=<?= $areaTerrain; ?>&ville=<?= $city; ?>'><?= $i; ?></a>
+				<?php endif;?>
+			<?php endfor; ?>
+
+			<?php if($lastRows==$currentPage) : ?>
+				<p><i class="fas fa-angle-double-right"></i></p>
+			<?php else : ?>
+			<a href="?page=<?= $nextPage; ?>&type=<?= $type; ?>&price=<?= $price; ?>&surface=<?= $area; ?>&areaTerrain=<?= $areaTerrain; ?>&ville=<?= $city; ?>"><i class="fas fa-angle-double-right"></i></a>
+			<?php endif; ?>	
+
+		</div>
+	</div>
+<div class='clear'></div>

@@ -1,0 +1,50 @@
+/* FOOTER */
+footer{
+    background-color:#766F64;
+    
+}
+#resauxSociaux ul li{
+    list-style-type: none;
+    display:inline-block;
+    font-size:4rem;
+    padding:20px;
+    color:white;
+    margin-top:3%;
+}
+#resauxSociaux ul li:hover{
+    color:#f49e39;
+    transform: scale(1.5);
+    transition: 1s;
+}
+#bottomBar{
+    display:block;
+
+}
+#bottomBar li:hover,
+#bottomBar a:hover,
+#bottomBar h3:hover{
+    color:#f49e39;
+}
+.infosBar{
+    display:inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+.infosBar li{
+    color:white;
+    list-style-type: none;
+    font-size:2rem;
+    padding:10px;
+    text-align:center;
+}
+.infosBar li a{
+    text-decoration: none;
+    color:white;
+    
+}
+.infosBar h3{
+    color:white;
+    font-size:3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

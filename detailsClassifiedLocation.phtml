@@ -1,0 +1,62 @@
+
+
+	<h1 class='entete'>Maison à vendre - <?= $classified['nombrePiece']; ?> piéces - 
+                 <?= $classified['surface']; ?> m² - <?= $classified['ville']; ?> - 
+                 <?= $classified['departement']; ?> - <span><?= $classified['price']; ?> €</span></h1>
+                
+			<div class='detailsClassified'>
+
+				<section class="picturs">
+					<img class="photo visible location" src="image/Location/<?= $classified['photo1']; ?>" alt=""/>
+					<img class="photo location" src="image/Location/<?= $classified['photo2']; ?>" alt=""/>
+					<img class="photo location" src="image/Location/<?= $classified['photo3']; ?>" alt=""/>
+					<img class="photo location" src="image/Location/<?= $classified['photo4']; ?>" alt=""/>
+					<img class="photo location" src="image/Location/<?= $classified['photo5']; ?>" alt=""/>
+					<img class="photo location" src="image/Location/<?= $classified['photo6']; ?>" alt=""/>
+				</section>
+
+				<section class='infoClassified'>
+                         <i id="arriere" class="fas fa-circle"></i>
+                        <i id="avance" class="fas fa-circle"></i>
+
+						<div class='description'>
+							<p class="reference"><span><strong>Réf : <?= $classified['id']; ?></strong></span></p>
+							<h3>Description</h3> 
+									<p><?= $classified['description']; ?></p>
+						</div>
+
+						<h2>Fiche détaillée du bien immobilier</h2>
+						
+                        <div class='ficheDetail'>
+                            <h3>Vue globale</h3>
+                                <p>Type de bien : <?= $classified['type']; ?></p>
+                                <p>Type d'appartement : <?= $classified['typeAppartement']; ?></p>
+                                <p>Ville : <?= $classified['ville']; ?></p>
+                                <p>Département : <?= $classified['departement']; ?></p>
+                                <p>Surface : <?= $classified['surface']; ?> m²</p>
+                                <p>Surface habitable : <?= $classified['surfaceHabitable']; ?> m²</p>
+								<p>Nombre de piéces : <?= $classified['nombrePiece']; ?> piéces</p>
+								<p>Type de construction : <?= $classified['typeConstruction']; ?></p>
+                                <p>Année de construction : <?= $classified['anneeConstruction']; ?></p>
+                        </div><!--
+
+                            --><div class='ficheDetail'>
+                            <h3>A savoir</h3>
+                                <p>Prix : <?= $classified['price']; ?> €</p>
+								<p>Provision charge : <?= $classified['provisionCharge']; ?> €</p>
+								<p>Honoraire charge : <?= $classified['honoraireCharge']; ?> €</p>
+								<p>Constitution dossier : <?= $classified['constitutionDossier']; ?> €</p>
+								<p>Etat des lieux : <?= $classified['etatDesLieux']; ?> €</p>
+								<p>Dépot de garantie : <?= $classified['depotGarantie']; ?> €</p>
+                                <p>Travaux récent : <?= $classified['travauxRecent']; ?></p>
+                                <p>Travaux à prévoir : <?= $classified['travausPrevoir']; ?></p>
+                        </div><!--
+                            
+                        --><div class='ficheDetail'>
+                            <h3>Equipement</h3>
+                                <p>Chauffage : <?= $classified['chauffage']; ?></p>
+                                <p>Eau chaude : <?= $classified['eauChaude']; ?></p>
+                        </div>  
+					</section>
+
+			</div>

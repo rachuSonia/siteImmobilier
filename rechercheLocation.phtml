@@ -1,0 +1,47 @@
+
+
+     
+		<?php foreach($location as $classified) : ?>
+			<section class="annonce">
+				<div class='infoAnnonce'>
+					<p><img src="image/Location/<?= $classified['photo1']; ?>" alt="Photo principale d'une annonce"/></p>
+				</div><!--
+				--><div class='infoAnnonce'>
+					<p><?= $classified['ville']; ?> <?= $classified['departement']; ?></p>
+				
+					<p><?= $classified['type']; ?> <?= $classified['typeAppartement']; ?></p>
+					
+					<p><?= $classified['surface']; ?>m², <?= $classified['nombrePiece']; ?>piéces</p>
+					<p><strong><?= $classified['price']; ?> €</strong></p>
+					<a href="detailsClassifiedLocation.php?id=<?= intval($classified['id']);?>">voir le detail</a>
+				</div>
+			</section>
+		<?php endforeach; ?>
+		<div class="pagination">
+				<?php if($currentPage==1): ?>
+					<p><i class="fas fa-angle-double-left"></i></p>
+				
+				<?php else : ?>
+					<a href="?page=<?= $prevPage ?>&ville=<?= $ville ?>&surface=<?= $surface ?>&type=<?= $type ?>&price=<?= $price ?>"><i class="fas fa-angle-double-left"></i></a>
+				<?php endif; ?>
+
+
+				<?php
+				for($i=$currentPage-1;$i<=$currentPage+1;$i++) :?>
+					
+						<?php if($i>0 && $i<=$lastRows) :?>
+					<a href="?page=<?= $i ?>&ville=<?= $ville ?>&surface=<?= $surface ?>&type=<?= $type ?>&price=<?= $price ?>"><?=$i ?></a>
+							
+				<?php endif;?>
+				<?php endfor;?>
+
+
+				 <?php if($currentPage==$lastRows): ?>
+					<p><i class="fas fa-angle-double-right"></i></p>
+				
+				<?php else : ?>
+					<a href="?page=<?= $nextPage ?>&ville=<?= $ville ?>&surface=<?= $surface ?>&type=<?= $type ?>&price=<?= $price ?>"><i class="fas fa-angle-double-right"></i></a>
+				<?php endif; ?>
+		
+		</div>
+		

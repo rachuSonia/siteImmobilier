@@ -1,0 +1,27 @@
+
+            <div class='infoUser'>
+                <h2>Informations personnels</h2>
+                    <div>
+                        <p><strong>Nom :</strong> <?= $userInfo['lastName']; ?></p>
+                        <p><strong>Prénom :</strong> <?= $userInfo['firstName']; ?></p>
+                        <p><strong>Date de naissance :</strong> <?= $userInfo['birth_date']; ?></p>
+                        <p><strong>Adresse :</strong> <?= $userInfo['adress']; ?></p>
+                    </div>
+                <h2>Contact</h2>
+                    <div>
+                        <p><strong>numéro de téléphone :</strong> <?= $userInfo['phoneMobile']; ?></p>
+                     
+                    </div>
+                <h2>Informations sur le compte</h2>
+                    <div>
+                        <p><strong>Adresse électronique :</strong> <?= $userInfo['e_mail']; ?></p>
+                        <p><strong>Nom d'utilisateur :</strong> <?= $userInfo['pseudo']; ?></p>
+                    </div>
+                 <a href="editerProfilUser.php?id=<?= intval($userInfo['id_user']); ?>">Editer mon profil</a>
+                 <?php if(isset($userInfo) && $userInfo['admin']==1) : ?>
+                     <a href="infoUserAdmin.php?id=<?= intval($userInfo['id_user']); ?>">utilisateurs</a>
+                <?php endif;?>
+            </div>        
+   
+
+    

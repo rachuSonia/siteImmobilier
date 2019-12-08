@@ -1,0 +1,36 @@
+
+        <table class='classifiedLocation'>
+
+            <tr>
+                <th colspan='8'>Liste des utilisateurs</th>
+            </tr>
+
+            <tr>
+                <th>N° de l'utilisateur</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Pseudo</th>
+                <th>Mail</th>
+                <th>Date d'anniversaire</th>
+                <th>Adresse</th>
+                <th>N° de téléphone</th>
+            </tr>
+
+              <?php  foreach($users as $user): ?>
+
+                    <tr>
+                        <td><?= $user['id_user']; ?></td>
+                        <td><?= $user['lastName']; ?></td>
+                        <td><?= $user['firstName']; ?></p>
+                        <td><?= $user['pseudo']; ?></td>
+                        <td><?= $user['e_mail']; ?></td>
+                        <td><?= $user['birth_date']; ?></td>
+                        <td><?= $user['adress']; ?></td>
+                        <td><?= $user['phoneMobile']; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+                
+        </table>
+   
+
+    

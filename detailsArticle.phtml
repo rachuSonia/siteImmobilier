@@ -1,0 +1,58 @@
+
+	<main class='mainDetailArticle'>
+	     
+        <?php  foreach($data as $value): ?>
+
+            <div class='detailArticle'>
+                <h3><?= $value['title']; ?></h3>
+                <p><?= $value['content']; ?></p>
+                <p class='auteur'><?= $value['pseudo']; ?> / <?= $value['date_publication']; ?></p>
+				<a href="editerArticle.php?id=<?= $value['id_post']; ?>" class='edition'>editer</a>
+				<a href="writeArticle.php?id=<?= $userInfo['id_user']; ?>" class='newArticle'>nouveau article</a>
+            </div>
+
+            <?php endforeach; ?>
+
+
+	
+            <div class='clear'></div>
+                <?php  foreach($getCommentaire as $value): ?>
+
+                    <div class='comment'>
+                        <h3><?= $value['comment']; ?></h3>
+                        <p>Rédiger par <?= $value['name']; ?> / <?= $value['date_publication']; ?></p>
+                    </div>
+                <?php endforeach; ?>
+	
+	
+
+		<form method="post" class='userConnect'>
+			
+				<h3> Rejoignez la discussion !! </h3>
+				<div>
+					<input type="text" name="name" id="radio" placeholder='Pseudo' value="<?php if(isset($pseudo)) echo $pseudo; ?>"> 
+                    <?php if(!empty($errors['name'])) :?>
+                        <div class='erreur'><?= $errors['name']; ?>
+                        </div>
+                    <?php endif; ?>
+				</div>
+
+				<div>
+					<textarea id="comment" name="commentaire" placeholder='Votre message' rows="5" cols="30"><?php if(isset($pseudo)) echo $pseudo; ?></textarea>
+                    <?php if(!empty($errors['commentaire'])) :?>
+                        <div class='erreur'><?= $errors['commentaire']; ?>
+                        </div>
+                    <?php endif; ?>
+				</div>	
+
+                <?php if(isset($succes) && empty($errors)) :?>
+                        <div class='succes'><?= $succes; ?>
+                        </div>
+                    <?php endif; ?>
+                    
+                <div>
+				    <button type='submit'>Ajouter</button>
+                </div>
+		</form>
+	</main>
+	

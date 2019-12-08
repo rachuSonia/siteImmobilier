@@ -1,0 +1,31 @@
+
+        <table class='classifiedLocation'>
+             <tr>
+                <th colspan='6'>Liste des articles</th>
+            </tr>
+
+            <tr>
+                <td>N° de l'article</td>
+                <td>Titre</td>
+                <td>Article</td>
+                <td>Auteur</td>
+                <td>Date de publication</td>
+             </tr>
+
+        <?php  foreach($posts as $post): ?>
+
+            <tr>
+                <td><a href='detailsArticle.php?id=<?= intval($post['id_post'])?>'><?= $post['id_post']; ?></a></td>
+                <td><?= htmlspecialchars($post['title']); ?></td>
+                <td><?= substr(htmlspecialchars($post['content']),0,170); ?> ...</p>
+                <td><?= htmlspecialchars($post['pseudo']); ?></td>
+                <td><?= htmlspecialchars($post['date_publication']); ?></td>
+                <td><a href='deletArticle.php?id=<?= intval($post['id_post']);?>'><span><i class="fas fa-times"></i></span></a></td>
+            </tr>
+
+        <?php endforeach; ?>
+
+        </table>
+        
+
+    

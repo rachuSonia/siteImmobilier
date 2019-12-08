@@ -1,0 +1,102 @@
+
+
+/* formulaire de button à la page index.php
+    qui permettent à l'utilisateur de lancer une recherche de bien en Location ou en Vente */
+
+.formClassified button{
+    margin-top:9%;
+    margin-left:2%;
+    width: 20%;
+    padding:15px 25px 15px 25px;
+    background-color: #f49e39;
+    opacity:0.8;
+    color:#fff;
+    border:0;
+    font-size:1.7rem;
+}
+.formClassified button:hover{
+    opacity:1;
+}
+
+/* bouttons de tous les formulaires du site qui permettent de valider le formulaire 
+    et de renvoyer les informations demander */
+
+.form button{
+    margin-top:1%;
+    margin-left:2%;
+    padding:10px;
+    width: 30%;
+    background-color: #f49e39;
+    opacity:0.9;
+    color:#fff;
+    border:0;
+    font-size:2rem;
+}
+.formClassified button,
+.form button{
+    
+    -ms-border-radius: 5%;
+    -webkit-border-radius:5%;
+    -moz-border-radius: 5%;
+    -o-border-radius: 5%;
+    -khtml-border-radius: 5%;
+    border-radius: 5%;
+
+    -khtml-box-shadow:0px 0px 8px #f49e39;
+    -webkit-box-shadow:0px 0px 8px #f49e39;
+    -o-box-shadow:0px 0px 8px #f49e39;
+    -moz-box-shadow:0px 0px 8px #f49e39;
+    -ms-box-shadow:0px 0px 8px #f49e39;
+    box-shadow: 0px 0px 8px #f49e39;
+}
+.userConnect button,
+.article button{
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border-radius:50px;
+	padding:18px;
+	width: 80%;
+	background-color:#f49e39;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+    font-size:1.7rem;
+}
+.userConnect button:hover,
+.article button:hover{
+    opacity:0.8;
+}
+.userConnect button a,
+.article button a{
+    text-decoration: none;
+    color:#fff;
+}
+
+/* input[type="file"]  */
+
+#newPicturs1,
+#newPicturs2,
+#newPicturs3,
+#newPicturs4,
+#newPicturs5,
+#newPicturs6,
+#Picturs1,
+#Picturs2,
+#Picturs3,
+#Picturs4,
+#Picturs5,
+#Picturs6,
+#newPicturs{
+    cursor:pointer;
+    padding:15px;
+    border:1px solid #fff;
+    width: 50%;
+   color:#f49e39;
+    font-size:1.8rem;
+    
+}
+
+.custom_file_upload{
+    margin-right: 4%;
+    font-size:1.6rem;
+}

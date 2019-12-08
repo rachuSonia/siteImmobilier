@@ -1,0 +1,108 @@
+
+        
+        <form method="POST" action="register.php" class='userConnect'>
+        <h1>Inscrivez-vous et accédez à tous nos services </h1>
+            <h3>Mes informations personnelles</h3>
+            <div>
+                <div>
+                    <input type="text" name="lastName" id="lastName" placeholder="Nom" value='<?php if(isset($lastName)) echo $lastName; ?>'>
+                    <div>
+                        <?php if(!empty($errors['lastName'])) :?>
+                            <p class='erreur'><?= $errors['lastName']; ?></p>
+                        <?php endif; ?>
+                    </div>
+                <div>
+
+                <div>
+                    <input type="text" name="firstName" id="firstName" placeholder="Prénom" value='<?php if(isset($firstName)) echo $firstName; ?>'>
+                    <div>
+                        <?php if(!empty($errors['firstName'])) :?>
+                            <p class='erreur'><?= $errors['firstName']; ?></p>
+                        <?php endif; ?>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="date" name="birth_date" id='birth_date' placeholder="Date de naissance" value="<?php if(isset($birth_date)) echo $birth_date; ?>">
+                    <div>
+                        <?php if(!empty($errors['birth_date'])) :?>
+                            <p class='erreur'><?= $errors['birth_date']; ?></p>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+            <h3>Mes informations sur le compte</h3>
+                <div>
+                    <div>
+                        <input type="text" name="pseudo" id="pseudo" placeholder="Nom d'utilisateur" value='<?php if(isset($pseudo)) echo $pseudo; ?>'>
+                            <div>
+                                <?php if(!empty($errors['pseudo'])) :?>
+                                    <p class='erreur'><?= $errors['pseudo']; ?></p>
+                                <?php endif; ?>
+                            </div>
+                    </div>
+                    <div>
+                        <input type="password" name="mdp1" id="mdp1" placeholder="Mot de passe">
+                        <div>
+                            <?php if(!empty($errors['mdp1'])) :?>
+                                <p class='erreur'><?= $errors['mdp1']; ?></p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="password" name="mdp2" id="mdp2" placeholder="Confirmez votre mot de passe">
+                        <div>
+                            <?php if(!empty($errors['mdp2'])) :?>
+                                <p class='erreur'><?= $errors['mdp2']; ?></p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+                <h3>Mes contacts</h3>
+                    <div>
+                        <div>
+                            <input type="text" name="email1" id='email1' placeholder="Email" value='<?php if(isset($email1)) echo $email1; ?>'>
+                            <div>
+                                <?php if(!empty($errors['email1'])) :?>
+                                    <p class='erreur'><?= $errors['email1']; ?></p>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" name="email2" id='email2' placeholder="Confirmez votre Email" value='<?php if(isset($email2)) echo $email2; ?>'>
+                            <div>
+                                <?php if(!empty($errors['email2'])) :?>
+                                    <p class='erreur'><?= $errors['email2']; ?></p>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" name="adress" id="adress" placeholder="Adresse" value='<?php if(isset($adress)) echo $adress; ?>'>
+                            <div>
+                                <?php if(!empty($errors['adress'])) :?>
+                                    <p class='erreur'><?= $errors['adress']; ?></p>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="tel" name='phoneMobile' id="phoneMobile" placeholder="Numéro de Téléphone" value='<?php if(isset($phoneMobil)) echo $phoneMobil; ?>'>
+                            <div>
+                                <?php if(!empty($errors['phoneMobile'])) :?>
+                                    <p class='erreur'><?= $errors['phoneMobile']; ?></p>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    <?php if(isset($succes)) :?>
+                                    <p class='succes'><?= $succes; ?></p>
+                                <?php endif; ?>
+                    </div>
+                    <button type="submit">Je crée mon compte</button>
+        </form>
+        <p class='inscriptConnec'>Vous avez déja un compte ? <span>Connectez-vous</span></p>   
+    
+
+    
